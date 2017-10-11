@@ -1,0 +1,119 @@
+Description: '- Default webapp service deployment, defines Task Definition and ECS Service and binds to Target Group'
+
+# We have few parameters and mostly pull off of ClusterStack and AppStack so
+# that we don't have to pass values through Travis.
+Parameters:
+  ClusterStack:
+    Type: String
+    Description: Name of our main stack. Expected to have Cluster and ServiceRoleArn outputs.
+  AppStack:
+    Type: String
+    Description: Name of our app-specific stack. Expected to have TaskRoleArn, ConfigBucketS3Url, LogGroupName outputs.
+  RepositoryName:
+    Type: String
+    Description: Name of our repository, can be passed to Docker along with a tag to identify an image
+  Tag:
+    Type: String
+    Description: Tag of the container image that we should deploy.
+    Default: latest
+  GitBranch:
+    Type: String
+    Description: Branch the code was deployed from
+  GitRevision:
+    Type: String
+    Description: Full Git SHA for the deployed code
+  DesiredCount:
+    Type: Number
+    Description: Number of container instances to run
+    Default: 0
+
+Resources:
+  TaskDefinition:
+    Type: 'AWS::ECS::TaskDefinition'
+    Properties:
+      Family: !Ref AppStack
+      TaskRoleArn:
+        Fn::ImportValue:
+          !Sub '${AppStack}:TaskRoleArn'
+      ContainerDefinitions:
+        - Name: service
+          Image: !Sub '${RepositoryName}:${Tag}'
+          Essential: true
+          Memory: 500
+          MemoryReservation: 200
+          PortMappings:
+            - ContainerPort:
+                Fn::ImportValue:
+                  !Sub '${AppStack}:ContainerPort'
+          Environment:
+            - Name: GIT_BRANCH
+              Value: !Ref GitBranch
+            - Name: GIT_REVISION
+              Value: !Ref GitRevision
+            # Putting this in the environment means that we are guaranteed a
+            # restart for every CI build, which is important for triggering
+            # rolling restarts for config updates.
+            - Name: CONTAINER_TAG
+              Value: !Ref Tag
+            - Name: NODE_ENV
+              Value: production
+            - Name: AWS_S3_CONFIG_URL
+              Value:
+                Fn::ImportValue:
+                  !Sub '${AppStack}:ConfigBucketS3Url'
+            - Name: AWS_REGION
+              Value: !Ref 'AWS::Region'
+            - Name: ASSET_HOST
+              Value:
+                Fn::ImportValue:
+                  !Sub '${AppStack}:CloudFrontDomainName'
+          LogConfiguration:
+            LogDriver: awslogs
+            Options:
+              awslogs-region: !Ref 'AWS::Region'
+              awslogs-group:
+                Fn::ImportValue:
+                  !Sub '${AppStack}:LogGroupName'
+              awslogs-stream-prefix: ecs
+
+  Service:
+    Type: 'AWS::ECS::Service'
+    Properties:
+      ServiceName: !Ref AppStack
+      Cluster: 
+        Fn::ImportValue:
+          !Sub '${ClusterStack}:Cluster'
+      DesiredCount: !Ref DesiredCount
+      TaskDefinition: !Ref TaskDefinition
+      Role: 
+        Fn::ImportValue:
+          !Sub '${ClusterStack}:ServiceRoleArn'
+      LoadBalancers:
+        # Must match a ContainerDefinition above
+        - ContainerName: service
+          ContainerPort:
+            Fn::ImportValue:
+              !Sub '${AppStack}:ContainerPort'
+          TargetGroupArn:
+            Fn::ImportValue:
+              !Sub '${AppStack}:TargetGroupArn'
+
+Outputs:
+  ServiceUrl:
+    Value:
+      Fn::Sub:
+        - 'https://console.aws.amazon.com/ecs/home?region=${AWS::Region}#/clusters/${ClusterName}/services/${AppStack}/events'
+        - ClusterName:
+            Fn::ImportValue:
+              !Sub '${ClusterStack}:Cluster'
+            
+  DashboardUrl:
+    Value: !Sub 'https://console.aws.amazon.com/cloudwatch/home?region=${AWS::Region}#dashboards:name=${AppStack}'
+
+  LogsUrl:
+    Value:
+      Fn::Sub:
+        - 'https://console.aws.amazon.com/cloudwatch/home?region=${AWS::Region}#logStream:group=${LogGroupName}'
+        - LogGroupName:
+            Fn::ImportValue:
+              !Sub '${AppStack}:LogGroupName'
