@@ -62,6 +62,7 @@ Resources:
         AppStack: !Ref AWS::StackName
         ShortName: !Ref ShortName
         Environment: !Ref Environment
+        Cdn: 'none'
         PublicDnsName: !Ref PublicDnsName
         LoadBalancerListenerPriority: !Ref LoadBalancerListenerPriority
         LoadBalancerHealthCheckPath: /admin/ok
