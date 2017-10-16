@@ -1,0 +1,92 @@
+.dl-i {
+  display: flex;
+  align-items: center;
+}
+
+.dept {
+  background-color: #f2f2f2;
+  margin-bottom: 1rem;
+  position: relative;
+  text-align: center;
+}
+
+.dept-icon {
+  background-color: #ffffff;
+  border: 3px solid #091f2f;
+  position: relative;
+  border-radius: 50%;
+  width: 50%;
+  padding-top: 50%;
+  height: auto;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: 10px;
+}
+
+.dept-icon img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.dept-info {
+  padding-bottom: 15px;
+  margin-bottom: 25px;
+  border-bottom: 1px dashed #000000;
+}
+
+.icon {
+  display: block;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  border: 2px solid #091f2f;
+}
+
+.icon-phone {
+  background-image: url(https://d2hk73kicft6oi.cloudfront.net/images/global/icons/icon-phone.svg);
+}
+
+.icon-email {
+  background-image: url(https://d2hk73kicft6oi.cloudfront.net/images/global/icons/icon-email.svg);
+}
+
+.icon-address {
+  background-image: url(https://d2hk73kicft6oi.cloudfront.net/images/global/icons/icon-location.svg);
+}
+
+.icon-hours {
+  background-image: url(https://d2hk73kicft6oi.cloudfront.net/images/global/icons/icon-time.svg);
+}
+
+.icon-social {
+  width: 50px;
+  height: 50px;
+  display: inline-block;
+  text-indent: -999rem;
+  background-repeat: no-repeat;
+  background-color: #ffffff;
+  border-radius: 50%;
+  background-size: 100%;
+  margin: 0 5px;
+}
+
+.icon-twitter {
+  background-image: url(https://d2hk73kicft6oi.cloudfront.net/images/global/icons/social-media/icon-twitter.svg);
+}
+
+.icon-facebook {
+  background-image: url(https://d2hk73kicft6oi.cloudfront.net/images/global/icons/social-media/icon-facebook.svg);
+}
+
+address {
+  font-style: normal;
+}
+
+@media screen and (min-width: 960px) {
+  .dept {
+    margin-bottom: 0;
+  }
+}

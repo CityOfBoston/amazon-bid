@@ -1,0 +1,35 @@
+.hro-st {
+  color: #fff;
+}
+
+.hro-bc {
+  padding: 15px;
+}
+
+.hro-bc .btn,
+.hro-bc .btn:link,
+.hro-bc .btn:visited {
+  color: #091f2f;
+  background-color: #fff;
+  margin: 5px 0;
+  display: block;
+}
+
+.hro-bc .btn:hover {
+  color: #ffffff;
+  background-color: #091f2f;
+}
+
+@media screen and (min-width: 960px) {
+  .hro-bc {
+    display: flex;
+    justify-content: center;
+    padding: 35px;
+  }
+
+  .hro-bc .btn,
+  .hro-bc .btn:link,
+  .hro-bc .btn:visited {
+    margin: 0 15px;
+  }
+}

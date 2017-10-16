@@ -1,0 +1,14 @@
+.vid {
+  flex: 1;
+  position: relative;
+}
+
+.vid-ci {
+  left: 10%;
+}
+
+@media screen and (min-width: 960px) {
+  .vid-split {
+    display: flex;
+  }
+}
