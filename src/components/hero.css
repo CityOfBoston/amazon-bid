@@ -1,3 +1,7 @@
+.hro {
+  background-image: url(../images/boston_yes.jpg);
+}
+
 .hro-st {
   color: #fff;
 }
@@ -21,6 +25,10 @@
 }
 
 @media screen and (min-width: 960px) {
+  .hro {
+    padding: 100px 0;
+  }
+  
   .hro-bc {
     display: flex;
     justify-content: center;
