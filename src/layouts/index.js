@@ -18,9 +18,9 @@ const Header = () => (
     </a>
     <nav className="nv-h">
       <ul className="nv-h-l">
-        <li className="nv-h-l-i"><a href="https://boston.gov/public-notices" title="Public Notices" className="nv-h-l-a">Public Notices</a></li>
-        <li className="nv-h-l-i"><a href="https://boston.gov/pay-and-apply" title="Pay and Apply" className="nv-h-l-a">Pay and Apply</a></li>
-        <li className="nv-h-l-i"><a href="https://boston.gov/feedback" title="Feedback" className="nv-h-l-a">Feedback</a></li>
+        <li className="nv-h-l-i"><a href="https://www.boston.gov/departments/economic-development" title="Economic Development" className="nv-h-l-a">Economic Development</a></li>
+        <li className="nv-h-l-i"><a href="https://imagine.boston.gov" title="Imagine Boston 2030" className="nv-h-l-a">Imagine Boston 2030</a></li>
+        <li className="nv-h-l-i"><a href="https://www.boston.gov" title="Boston.gov" className="nv-h-l-a">Boston.gov</a></li>
       </ul>
     </nav>
   </header>

@@ -1,0 +1,13 @@
+<svg width="39" height="59" viewBox="0 0 39 59" xmlns="http://www.w3.org/2000/svg">
+  <title>PDF</title>
+  <g fill="none" fill-rule="evenodd">
+    <path fill="#091F2F" d="M0 0h39v58.95L19.73 52.2 0 58.94"/>
+    <g stroke="#288BE4" stroke-width="2">
+      <path d="M13 10h9.14L26 14.2V28H13V10z"/>
+      <path d="M21 9.03V15h5.65"/>
+    </g>
+    <text font-family="Montserrat-Bold, Montserrat" font-size="12" font-weight="bold" fill="#FFF">
+      <tspan x="7.7" y="43">PDF</tspan>
+    </text>
+  </g>
+</svg>
