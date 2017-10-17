@@ -3,6 +3,14 @@
   position: relative;
 }
 
+.vid-1 {
+  background-image: url(../images/southend.jpg);
+}
+
+.vid-2 {
+  background-image: url(../images/teacher.jpg);
+}
+
 .vid-ci {
   left: 10%;
 }

@@ -7,8 +7,8 @@ class Video extends React.Component {
         <div className="vid" style={{backgroundImage: 'url(https://patterns.boston.gov/images/crispus/boston.jpg)'}} onClick={() => this.props.videoAction('jihJIDE5KYA')}>
           <div className="vid-c">
             <div className="vid-ci">
-              <div className="vid-t">Look to<br />Boston</div>
-              <div className="vid-st m-t300">By: Mayor's Office of New Urban Mechanics</div>
+              <div className="vid-t">It feels like home</div>
+              <div className="vid-st m-t300">By: Dutch Rebelle, Tigerman WOAH, Julie Rhodes</div>
               <div className="vid-ic m-t300">
                 <button className="vid-cta">
                   <img src="https://patterns.boston.gov/images/global/icons/play.svg" alt="Play Video" height="97" width="97" className="vid-cta-i" />

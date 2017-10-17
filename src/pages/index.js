@@ -7,6 +7,7 @@ import Hero from '../components/hero'
 import Footer from '../components/footer'
 import ModalVideo from 'react-modal-video'
 import Video from '../components/video'
+import Intro from '../components/intro'
 
 import styles from "./index.css"
 
@@ -35,6 +36,7 @@ class IndexPage extends React.Component {
     return (
       <div className="mn">
         <Hero />
+        <Intro />
         <Double videoAction={this.openModal} />
         <Grid videoAction={this.openModal} />
         <Video videoAction={this.openModal}></Video>

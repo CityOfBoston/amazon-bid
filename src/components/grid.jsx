@@ -9,7 +9,7 @@ class Grid extends React.Component {
       <div className="b b--g b--fw">
         <div className="b-c">
           <div className="sh">
-            <h2 className="sh-title">Starting Transactions</h2>
+            <h2 className="sh-title">Testimonials</h2>
           </div>
           <div className="g">
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
@@ -36,11 +36,11 @@ class Grid extends React.Component {
                 <div className="cd-d">Learn more about one of Boston’s most diverse and active neighborhoods.</div>
               </div>
             </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+            <a className="cd m-t500 g--4 g--4--sl">
               <div className="cd-ic" style={{backgroundImage: 'url(https://www.boston.gov/sites/default/files/styles/grid_card_image/public/allston2.jpg?itok&#x3D;jMsIfnJ6)'}}></div>
               <div className="cd-c">
-                <div className="cd-t">Allston</div>
-                <div className="cd-st t--upper t--subtitle">Neighborhood</div>
+                <div className="cd-t">Letters of Support</div>
+                <div className="cd-st t--upper t--subtitle">Something here...</div>
                 <div className="cd-d">Learn more about one of Boston’s most diverse and active neighborhoods.</div>
               </div>
             </a>
