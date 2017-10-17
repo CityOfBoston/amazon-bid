@@ -1,4 +1,5 @@
 import React from "react"
+import styles from "./video.css"
 
 class Video extends React.Component {
   render() {
@@ -6,7 +7,7 @@ class Video extends React.Component {
       <div className="b b--fw">
         <div className="vid" style={{backgroundImage: 'url(https://patterns.boston.gov/images/crispus/boston.jpg)'}} onClick={() => this.props.videoAction('jihJIDE5KYA')}>
           <div className="vid-c">
-            <div className="vid-ci">
+            <div className="b-c b-c--top">
               <div className="vid-t">It feels like home</div>
               <div className="vid-st m-t300">By: Dutch Rebelle, Tigerman WOAH, Julie Rhodes</div>
               <div className="vid-ic m-t300">

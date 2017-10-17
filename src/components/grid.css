@@ -2,8 +2,24 @@
   position: relative;
 }
 
+.cd:hover {
+  cursor: pointer;
+}
+
 .cd-i {
   position: absolute;
   top: 0;
   right: 1rem;
+}
+
+.cd-ic--anne {
+  background-image: url(../images/anne.jpg);
+}
+
+.cd-ic--marty {
+  background-image: url(../images/marty.jpg);
+}
+
+.cd-ic--zorica {
+  background-image: url(../images/zorica.jpg);
 }

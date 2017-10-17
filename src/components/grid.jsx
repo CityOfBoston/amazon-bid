@@ -13,7 +13,7 @@ class Grid extends React.Component {
           </div>
           <div className="g">
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
-              <div className="cd-ic" style={{backgroundImage: 'url(https://www.boston.gov/sites/default/files/styles/grid_card_image/public/allston2.jpg?itok&#x3D;jMsIfnJ6)'}}></div>
+              <div className="cd-ic cd-ic--anne"></div>
               <div className="cd-c">
                 <div className="cd-t">Allston</div>
                 <div className="cd-st t--upper t--subtitle">Neighborhood</div>
@@ -21,7 +21,7 @@ class Grid extends React.Component {
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
-              <div className="cd-ic" style={{backgroundImage: 'url(https://www.boston.gov/sites/default/files/styles/grid_card_image/public/allston2.jpg?itok&#x3D;jMsIfnJ6)'}}></div>
+              <div className="cd-ic cd-ic--marty"></div>
               <div className="cd-c">
                 <div className="cd-t">Allston</div>
                 <div className="cd-st t--upper t--subtitle">Neighborhood</div>
@@ -29,7 +29,7 @@ class Grid extends React.Component {
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
-              <div className="cd-ic" style={{backgroundImage: 'url(https://www.boston.gov/sites/default/files/styles/grid_card_image/public/allston2.jpg?itok&#x3D;jMsIfnJ6)'}}></div>
+              <div className="cd-ic cd-ic--zorica"></div>
               <div className="cd-c">
                 <div className="cd-t">Allston</div>
                 <div className="cd-st t--upper t--subtitle">Neighborhood</div>

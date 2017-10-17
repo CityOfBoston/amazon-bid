@@ -43,7 +43,7 @@ class Footer extends React.Component {
                 </li>
               </ul>
             </div>
-            <div className="g--4">
+            <div className="g--4 ft--bl">
               <ul className="dl">
                 <li className="dl-i">
                   <span className="dl-t"><div className="icon icon-hours"></div></span>

@@ -85,6 +85,20 @@ address {
   font-style: normal;
 }
 
+.ft--bl {
+  padding-top: 1rem;
+  margin-top: 1rem;
+  border-top: 1px dashed #e0e0e0;
+}
+
+@media screen and (min-width: 835px) {
+  .ft--bl {
+    padding-top: 0;
+    margin-top: 0;
+    border-top: none;
+  }
+}
+
 @media screen and (min-width: 960px) {
   .dept {
     margin-bottom: 0;
