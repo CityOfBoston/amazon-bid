@@ -1,7 +1,8 @@
 import React from "react"
 
 import pdf from '../images/pdf.svg'
-import styles from "./grid.css";
+import styles from "./grid.css"
+import letters from '../testimonials/BostonLettersOfSupport.pdf'
 
 class Grid extends React.Component {
   render() {
@@ -52,10 +53,10 @@ class Grid extends React.Component {
                 <div className="cd-d">Learn more about one of Boston’s most diverse and active neighborhoods.</div>
               </div>
             </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+            <a href={letters} className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
               <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
               <div className="cd-c">
-                <div className="cd-t">Letters of Support</div>
+                <div className="cd-t" style={{maxWidth: '80%'}}>Letters of Support</div>
                 <div className="cd-st t--upper t--subtitle">Neighborhood</div>
                 <div className="cd-d">Learn more about one of Boston’s most diverse and active neighborhoods.</div>
               </div>
