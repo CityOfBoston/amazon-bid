@@ -20,15 +20,15 @@
 }
 
 .hro-bc .btn:hover {
-  color: #ffffff;
-  background-color: #091f2f;
+  color: #091f2f;
+  background-color: #FF9900;
 }
 
 @media screen and (min-width: 960px) {
   .hro {
     padding: 100px 0;
   }
-  
+
   .hro-bc {
     display: flex;
     justify-content: center;
