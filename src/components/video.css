@@ -1,3 +1,7 @@
+.vid--home {
+  background-image: url(../images/home.jpg);
+}
+
 .b-c--top {
   margin-top: 25px !important;
 }

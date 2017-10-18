@@ -7,7 +7,7 @@ class Video extends React.Component {
   render() {
     return (
       <div className="b b--fw">
-        <div className="vid" style={{backgroundImage: 'url(https://patterns.boston.gov/images/crispus/boston.jpg)'}} onClick={() => this.props.videoAction('jihJIDE5KYA')}>
+        <div className="vid vid--home" onClick={() => this.props.videoAction('jihJIDE5KYA')}>
           <div className="vid-c">
             <div className="b-c b-c--top">
               <div className="vid-t">It feels like home</div>
