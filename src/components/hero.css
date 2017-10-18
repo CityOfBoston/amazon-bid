@@ -20,8 +20,9 @@
 }
 
 .hro-bc .btn:hover {
-  color: #ffffff;
+  color: #ffffff !important;
   background-color: #FF9900;
+  position: relative;
 }
 
 @media screen and (min-width: 960px) {
