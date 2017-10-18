@@ -3,6 +3,10 @@
   align-items: center;
 }
 
+.dl-t {
+  width: 10% !important;
+}
+
 .dept {
   background-color: #f2f2f2;
   margin-bottom: 1rem;
