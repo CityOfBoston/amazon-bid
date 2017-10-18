@@ -1,6 +1,5 @@
 import React from 'react'
 import Link from 'gatsby-link'
-import ReactGA from 'react-ga'
 
 import Double from '../components/double'
 import Grid from '../components/grid'
