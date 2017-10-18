@@ -13,8 +13,6 @@ import Intro from '../components/intro'
 
 import styles from "./index.css"
 
-ReactGA.initialize('UA-99773468-5');
-
 class IndexPage extends React.Component {
 
   constructor () {
@@ -30,8 +28,6 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
-    ReactGA.pageview(window.location.hash);
-    
     if (this.props.location.hash) {
       let videoId = this.props.location.hash.replace('#', '')
       this.setState({isOpen: true, videoId: videoId})
