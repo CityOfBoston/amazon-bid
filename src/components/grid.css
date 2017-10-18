@@ -3,10 +3,6 @@
 }
 
 .cd:hover {
-  background-color: #ff9900 !important;
-}
-
-.cd:hover {
   cursor: pointer;
 }
 
