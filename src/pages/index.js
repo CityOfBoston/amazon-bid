@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'gatsby-link'
+import ReactGA from 'react-ga'
 
 import Double from '../components/double'
 import Grid from '../components/grid'
@@ -11,6 +12,8 @@ import Video from '../components/video'
 import Intro from '../components/intro'
 
 import styles from "./index.css"
+
+ReactGA.initialize('UA-99773468-5');
 
 class IndexPage extends React.Component {
 
@@ -27,6 +30,8 @@ class IndexPage extends React.Component {
   }
 
   componentDidMount() {
+    ReactGA.pageview(window.location.hash);
+    
     if (this.props.location.hash) {
       let videoId = this.props.location.hash.replace('#', '')
       this.setState({isOpen: true, videoId: videoId})
