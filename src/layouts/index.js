@@ -13,7 +13,7 @@ const Header = () => (
         <img src={logo} alt="City of Boston ❤︎ Amazon" className="lo-i" style={{width: 270}} />
       </a>
     </div>
-    <a href="#" className="s">
+    <a href="https://www.boston.gov" className="s" title="Boston.gov">
       <img src="https://patterns.boston.gov/images/public/seal.svg" alt="City of Boston" className="s-i" style={{maxHeight: 125}} />
     </a>
     <nav className="nv-h">

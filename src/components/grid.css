@@ -6,10 +6,6 @@
   background-color: #ff9900 !important;
 }
 
-.cd:hover .cd-ic {
-  background-color: #ff9900 !important;
-}
-
 .cd:hover {
   cursor: pointer;
 }
