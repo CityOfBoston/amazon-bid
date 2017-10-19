@@ -13,20 +13,20 @@ class Grid extends React.Component {
             <h2 className="sh-title">Testimonials</h2>
           </div>
           <div className="g">
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('kJ-sAaZway0')}>
-              <div className="cd-ic cd-ic--anne"></div>
-              <div className="cd-c">
-                <div className="cd-t">Ann Klee</div>
-                <div className="cd-st t--upper t--subtitle">General Electric</div>
-                <div className="cd-d">Vice President Environment, Health & Safety</div>
-              </div>
-            </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('GKJ03uIKpjQ')}>
               <div className="cd-ic cd-ic--marty"></div>
               <div className="cd-c">
                 <div className="cd-t">Martin J. Walsh</div>
                 <div className="cd-st t--upper t--subtitle">City of Boston</div>
                 <div className="cd-d">Mayor</div>
+              </div>
+            </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('kJ-sAaZway0')}>
+              <div className="cd-ic cd-ic--anne"></div>
+              <div className="cd-c">
+                <div className="cd-t">Ann Klee</div>
+                <div className="cd-st t--upper t--subtitle">General Electric</div>
+                <div className="cd-d">Vice President Environment, Health & Safety</div>
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('FIgnnAl0VCI')}>
