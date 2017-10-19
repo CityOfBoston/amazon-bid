@@ -28,7 +28,7 @@ class ReadPage extends React.Component {
   render () {
     return (
       <div className="mn">
-        <iframe src={pdf} className="iframe" />
+        <embed src={pdf} className="iframe" type='application/pdf' />
       </div>
     )
   }
