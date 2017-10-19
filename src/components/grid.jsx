@@ -29,7 +29,7 @@ class Grid extends React.Component {
                 <div className="cd-d">Mayor</div>
               </div>
             </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('FIgnnAl0VCI')}>
               <div className="cd-ic cd-ic--zorica"></div>
               <div className="cd-c">
                 <div className="cd-t">Zorica Pantić</div>
