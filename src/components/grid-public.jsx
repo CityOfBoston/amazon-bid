@@ -53,6 +53,30 @@ class GridPublic extends React.Component {
                 <div className="cd-d">Student</div>
               </div>
             </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('UY8LVWL9O9c')}>
+              <div className="cd-ic cd-ic--fulp"></div>
+              <div className="cd-c">
+                <div className="cd-t">Carol Fulp</div>
+                <div className="cd-st t--upper t--subtitle">The Partnership</div>
+                <div className="cd-d">President and CFO</div>
+              </div>
+            </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('MwVklVadbpQ')}>
+              <div className="cd-ic cd-ic--rinchett"></div>
+              <div className="cd-c">
+                <div className="cd-t">Ritchy Rinchett</div>
+                <div className="cd-st t--upper t--subtitle">Jeremiah E. Burke High School</div>
+                <div className="cd-d">Student</div>
+              </div>
+            </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('2ZFBO6TmjlU')}>
+              <div className="cd-ic cd-ic--brown"></div>
+              <div className="cd-c">
+                <div className="cd-t">Robert A. Brown</div>
+                <div className="cd-st t--upper t--subtitle">Boston University</div>
+                <div className="cd-d">President</div>
+              </div>
+            </a>
             <a href={letters} className="cd m-t500 g--4 g--4--sl" download>
               <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
               <div className="cd-c">
