@@ -1,0 +1,15 @@
+.ch {
+  margin-top: 5rem;
+}
+
+.ch .g--6:first-child .ch-c {
+  padding-right: 1rem;
+}
+
+.ch .g--6:last-child .ch-c {
+  padding-left: 1rem;
+}
+
+.ch-i {
+  width: 100%;
+}
