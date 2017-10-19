@@ -4,10 +4,14 @@
   "version": "1.0.0",
   "author": "Kyle Mathews <mathews.kyle@gmail.com>",
   "dependencies": {
+    "boom": "^6.0.0",
     "gatsby": "^1.9.45",
     "gatsby-link": "^1.6.17",
     "gatsby-plugin-google-analytics": "^1.0.10",
     "gatsby-plugin-react-helmet": "^1.0.5",
+    "hapi": "^16.6.2",
+    "hapi-auth-cookie": "^7.0.0",
+    "inert": "^4.2.1",
     "react-modal-video": "^1.0.7"
   },
   "keywords": [
@@ -19,9 +23,31 @@
     "build": "gatsby build",
     "develop": "gatsby develop",
     "format": "prettier --trailing-comma es5 --no-semi --single-quote --write 'src/**/*.js'",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "babel-watch -D -w server server",
+    "build-js": "gulp build",
+    "start": "node build/server"
   },
   "devDependencies": {
-    "prettier": "^1.6.1"
+    "babel-cli": "^6.26.0",
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.1",
+    "babel-plugin-inline-import": "^2.0.6",
+    "babel-plugin-transform-decorators-legacy": "^1.3.4",
+    "babel-plugin-transform-es2015-modules-commonjs": "^6.26.0",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-watch": "^2.0.7",
+    "del": "^3.0.0",
+    "eslint": "^4.9.0",
+    "eslint-config-prettier": "^2.6.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-ignore": "^2.0.2",
+    "gulp-plumber": "^1.1.0",
+    "prettier": "^1.7.4"
   }
 }

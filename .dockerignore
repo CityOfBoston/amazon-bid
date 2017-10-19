@@ -6,3 +6,4 @@ Dockerfile
 .dockerignore
 index.js
 public
+build

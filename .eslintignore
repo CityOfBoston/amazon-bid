@@ -1,0 +1,7 @@
+/flow-typed
+/build
+/coverage
+/node_modules
+/public
+/src
+/gatsby-config.js
