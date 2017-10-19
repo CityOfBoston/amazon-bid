@@ -13,7 +13,7 @@ class Grid extends React.Component {
             <h2 className="sh-title">Testimonials</h2>
           </div>
           <div className="g">
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('GKJ03uIKpjQ')}>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('ZNy8vC4Q7Zs')}>
               <div className="cd-ic cd-ic--marty"></div>
               <div className="cd-c">
                 <div className="cd-t">Martin J. Walsh</div>
