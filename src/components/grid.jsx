@@ -38,7 +38,7 @@ class Grid extends React.Component {
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl">
-              <div className="cd-ic" style={{backgroundImage: 'url(https://www.boston.gov/sites/default/files/styles/grid_card_image/public/allston2.jpg?itok&#x3D;jMsIfnJ6)'}}></div>
+              <div className="cd-ic cd-ic--panos"></div>
               <div className="cd-c">
                 <div className="cd-t">Panos Panay</div>
                 <div className="cd-st t--upper t--subtitle">Berklee College of Music</div>
@@ -46,7 +46,7 @@ class Grid extends React.Component {
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
-              <div className="cd-ic" style={{backgroundImage: 'url(https://www.boston.gov/sites/default/files/styles/grid_card_image/public/allston2.jpg?itok&#x3D;jMsIfnJ6)'}}></div>
+              <div className="cd-ic cd-ic--lee"></div>
               <div className="cd-c">
                 <div className="cd-t">Christine Lee</div>
                 <div className="cd-st t--upper t--subtitle">Northeastern University</div>
