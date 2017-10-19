@@ -8,7 +8,7 @@ class Double extends React.Component {
     return (
       <div className="b b--fw">
         <div id="vid" className="vid-split">
-          <div className="vid vid-1" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+          <div className="vid vid-1" onClick={() => this.props.videoAction('vNOPMqXJ3EU')}>
             <div className="vid-c">
               <div className="vid-ci">
                 <div className="vid-t">Boston.<br />Yes.</div>
@@ -21,7 +21,7 @@ class Double extends React.Component {
               </div>
             </div>
           </div>
-          <div className="vid vid-2" onClick={() => this.props.videoAction('hW6vfkxEaZM')}>
+          <div className="vid vid-2" onClick={() => this.props.videoAction('Mpic3G5QhSY')}>
             <div className="vid-c">
               <div className="vid-ci">
                 <div className="vid-t">Look to<br />Boston</div>
