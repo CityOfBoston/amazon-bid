@@ -2,12 +2,11 @@ import React from 'react'
 import Link from 'gatsby-link'
 
 import Double from '../components/double'
-import Grid from '../components/grid'
+import Grid from '../components/grid-public'
 import Hero from '../components/hero'
-import Contact from '../components/contact'
+import Contact from '../components/contact-public'
 import Footer from '../components/footer'
 import ModalVideo from 'react-modal-video'
-import Video from '../components/video'
 import Intro from '../components/intro'
 import Chapters from '../components/chapters'
 
@@ -42,7 +41,6 @@ class PublicPage extends React.Component {
         <Double videoAction={this.openModal} />
         <Grid videoAction={this.openModal} />
         <Chapters />
-        <Video />
         <Contact />
         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.videoId} onClose={() => this.setState({isOpen: false})} />
       </div>

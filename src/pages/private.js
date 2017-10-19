@@ -7,7 +7,6 @@ import Hero from '../components/hero'
 import Contact from '../components/contact'
 import Footer from '../components/footer'
 import ModalVideo from 'react-modal-video'
-import Video from '../components/video'
 import Intro from '../components/intro'
 
 import styles from "./index.css"

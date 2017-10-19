@@ -5,14 +5,14 @@ import styles from "./contact.css"
 class Contact extends React.Component {
   render() {
     return (
-      <div className="b b--w b--fw">
+      <div className="b b--g b--fw">
         <div className="b-c">
           <div className="sh m-b500">
             <h2 className="sh-title">Contact</h2>
           </div>
           <div className="g">
             <div className="g--4">
-              <div className="dept p-a500">
+              <div className="dept dept--w p-a500">
                 <div className="dept-info">
                   <div className="dept-icon"><a href="https://www.boston.gov/departments/economic-development" className="t--sans t--upper"><img src="https://www.boston.gov/sites/default/files/department_icons/svg_economic_development_.svg" alt="Economic Development" /></a></div>
                   <div className="dept-name"><a href="https://www.boston.gov/departments/economic-development" className="t--sans t--upper">Economic Development</a></div>

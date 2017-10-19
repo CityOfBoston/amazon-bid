@@ -9,7 +9,7 @@ class Footer extends React.Component {
       <footer className="ft">
         <div className="g">
           <div className="g--6" style={{display: 'flex', alignItems: 'center'}}>
-            <img src="https://patterns.boston.gov/images/b-light.svg" alt="City of Boston" className="m-r500" />
+            <a href="https://www.boston.gov" className="m-r500"><img src="https://patterns.boston.gov/images/b-light.svg" alt="City of Boston" /></a>
             <a href="https://www.boston.gov/departments/mayors-office/martin-j-walsh" className="t--info t--w">Mayor Martin J Walsh</a>
           </div>
           <div className="g--6 ft-ic">

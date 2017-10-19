@@ -10,6 +10,10 @@
   text-align: center;
 }
 
+.dept--w {
+  background-color: #ffffff;
+}
+
 .dept-icon {
   background-color: #ffffff;
   border: 3px solid #091f2f;
@@ -43,6 +47,7 @@
   height: 35px;
   border-radius: 50%;
   border: 2px solid #091f2f;
+  background-color: #ffffff;
 }
 
 .icon-phone {
