@@ -26,7 +26,7 @@ class Grid extends React.Component {
               <div className="cd-c">
                 <div className="cd-t">Ann Klee</div>
                 <div className="cd-st t--upper t--subtitle">General Electric</div>
-                <div className="cd-d">Vice President Environment, Health & Safety</div>
+                <div className="cd-d">VP, Environmental & Safety, head of Boston operations</div>
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('FIgnnAl0VCI')}>

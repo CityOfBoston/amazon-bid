@@ -1,6 +1,11 @@
 import React from "react"
 
 import styles from "./chapters.css"
+import chapterOne from "../images/chapter-1.jpg"
+import chapterTwo from "../images/chapter-2.jpg"
+import chapterThree from "../images/chapter-3.jpg"
+import chapterFour from "../images/chapter-4.jpg"
+import chapterFive from "../images/chapter-5.jpg"
 
 class Contact extends React.Component {
   render() {
@@ -22,7 +27,7 @@ class Contact extends React.Component {
               </div>
               <div className="g--6">
                 <div className="ch-c">
-                  <img src="https://via.placeholder.com/600x600" className="ch-i" />
+                  <img src={chapterOne} className="ch-i" />
                 </div>
               </div>
             </div>
@@ -31,7 +36,7 @@ class Contact extends React.Component {
             <div className="g">
               <div className="g--6">
                 <div className="ch-c">
-                  <img src="https://via.placeholder.com/600x600" className="ch-i" />
+                  <img src={chapterTwo} className="ch-i" />
                 </div>
               </div>
               <div className="g--6">
@@ -56,7 +61,7 @@ class Contact extends React.Component {
               </div>
               <div className="g--6">
                 <div className="ch-c">
-                  <img src="https://via.placeholder.com/600x600" className="ch-i" />
+                  <img src={chapterThree} className="ch-i" />
                 </div>
               </div>
             </div>
@@ -65,7 +70,7 @@ class Contact extends React.Component {
             <div className="g">
               <div className="g--6">
                 <div className="ch-c">
-                  <img src="https://via.placeholder.com/600x600" className="ch-i" />
+                  <img src={chapterFour} className="ch-i" />
                 </div>
               </div>
               <div className="g--6">
@@ -90,7 +95,7 @@ class Contact extends React.Component {
               </div>
               <div className="g--6">
                 <div className="ch-c">
-                  <img src="https://via.placeholder.com/600x600" className="ch-i" />
+                  <img src={chapterFive} className="ch-i" />
                 </div>
               </div>
             </div>
