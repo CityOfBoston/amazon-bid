@@ -3,8 +3,11 @@
 node_modules
 .cache/
 # Build directory
+build/
 public/
 .DS_Store
 yarn-error.log
 yarn.lock
 src/pages/index.js
+server.crt
+server.key
