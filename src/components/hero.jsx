@@ -2,7 +2,6 @@ import React from "react"
 
 import styles from "./hero.css"
 import hero from '../images/boston_yes.jpg'
-import downlaod from '../proposals/BostonAmazonHQ2.pdf'
 
 class Hero extends React.Component {
   render() {
