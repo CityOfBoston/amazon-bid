@@ -12,8 +12,11 @@ RUN openssl req -nodes -new -x509 \
 COPY package.json package-lock.json gatsby-config.js ./
 COPY src ./src/
 
+RUN mv src/pages/private.js src/pages/index.js
+
 RUN npm install && \
   npx gatsby build && \
+  echo "GATSBY DONE" && \
   rm -rf node_modules
 
 COPY nginx/default.conf /etc/nginx/conf.d/
