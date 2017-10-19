@@ -13,7 +13,7 @@ class Grid extends React.Component {
             <h2 className="sh-title">Testimonials</h2>
           </div>
           <div className="g">
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('kJ-sAaZway0')}>
               <div className="cd-ic cd-ic--anne"></div>
               <div className="cd-c">
                 <div className="cd-t">Ann Klee</div>
@@ -37,7 +37,7 @@ class Grid extends React.Component {
                 <div className="cd-d">President</div>
               </div>
             </a>
-            <a className="cd m-t500 g--4 g--4--sl">
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('kO7vZiMC34M')}>
               <div className="cd-ic cd-ic--panos"></div>
               <div className="cd-c">
                 <div className="cd-t">Panos Panay</div>
@@ -45,7 +45,7 @@ class Grid extends React.Component {
                 <div className="cd-d">Vice President for Innovation and Strategy</div>
               </div>
             </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('xHvg0aR7BJA')}>
               <div className="cd-ic cd-ic--lee"></div>
               <div className="cd-c">
                 <div className="cd-t">Christine Lee</div>
@@ -53,12 +53,12 @@ class Grid extends React.Component {
                 <div className="cd-d">Student</div>
               </div>
             </a>
-            <a href={letters} className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('_S2LCKoctjI')}>
+            <a href={letters} className="cd m-t500 g--4 g--4--sl" download>
               <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
               <div className="cd-c">
                 <div className="cd-t" style={{maxWidth: '80%'}}>Letters of Support</div>
                 <div className="cd-st t--upper t--subtitle"></div>
-                <div className="cd-d"></div>
+                <div className="cd-d">Hear more from our amazing business, education, and community leaders.</div>
               </div>
             </a>
           </div>
