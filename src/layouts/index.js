@@ -32,7 +32,7 @@ const TemplateWrapper = ({ children }) => (
     <Helmet
       title="City of Boston Amazon Pitch"
       meta={[
-        { name: 'description', content: 'City of Boston Amazon Pitch' },
+        { name: 'description', content: 'City of Boston ❤︎ Amazon ' },
       ]}
     >
       <link rel="stylesheet" type="text/css" href="https://patterns.boston.gov/css/public.css" />
