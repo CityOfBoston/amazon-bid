@@ -29,12 +29,28 @@ class GridPublic extends React.Component {
                 <div className="cd-d">VP, Environmental & Safety, head of Boston operations</div>
               </div>
             </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('FIgnnAl0VCI')}>
-              <div className="cd-ic cd-ic--zorica"></div>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('UY8LVWL9O9c')}>
+              <div className="cd-ic cd-ic--fulp"></div>
               <div className="cd-c">
-                <div className="cd-t">Zorica Pantić</div>
-                <div className="cd-st t--upper t--subtitle">Wentworth Institute of Technology</div>
+                <div className="cd-t">Carol Fulp</div>
+                <div className="cd-st t--upper t--subtitle">The Partnership</div>
+                <div className="cd-d">President and CFO</div>
+              </div>
+            </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('MwVklVadbpQ')}>
+              <div className="cd-ic cd-ic--brown"></div>
+              <div className="cd-c">
+                <div className="cd-t">Robert A. Brown</div>
+                <div className="cd-st t--upper t--subtitle">Boston University</div>
                 <div className="cd-d">President</div>
+              </div>
+            </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('2ZFBO6TmjlU')}>
+              <div className="cd-ic cd-ic--rinchett"></div>
+              <div className="cd-c">
+                <div className="cd-t">Ritchy Rinchett</div>
+                <div className="cd-st t--upper t--subtitle">Jeremiah E. Burke High School</div>
+                <div className="cd-d">Student</div>
               </div>
             </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('kO7vZiMC34M')}>
@@ -45,36 +61,20 @@ class GridPublic extends React.Component {
                 <div className="cd-d">Vice President for Innovation and Strategy</div>
               </div>
             </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('FIgnnAl0VCI')}>
+              <div className="cd-ic cd-ic--zorica"></div>
+              <div className="cd-c">
+                <div className="cd-t">Zorica Pantić</div>
+                <div className="cd-st t--upper t--subtitle">Wentworth Institute of Technology</div>
+                <div className="cd-d">President</div>
+              </div>
+            </a>
             <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('xHvg0aR7BJA')}>
               <div className="cd-ic cd-ic--lee"></div>
               <div className="cd-c">
                 <div className="cd-t">Christine Lee</div>
                 <div className="cd-st t--upper t--subtitle">Northeastern University</div>
                 <div className="cd-d">Student</div>
-              </div>
-            </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('UY8LVWL9O9c')}>
-              <div className="cd-ic cd-ic--fulp"></div>
-              <div className="cd-c">
-                <div className="cd-t">Carol Fulp</div>
-                <div className="cd-st t--upper t--subtitle">The Partnership</div>
-                <div className="cd-d">President and CFO</div>
-              </div>
-            </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('MwVklVadbpQ')}>
-              <div className="cd-ic cd-ic--rinchett"></div>
-              <div className="cd-c">
-                <div className="cd-t">Ritchy Rinchett</div>
-                <div className="cd-st t--upper t--subtitle">Jeremiah E. Burke High School</div>
-                <div className="cd-d">Student</div>
-              </div>
-            </a>
-            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('2ZFBO6TmjlU')}>
-              <div className="cd-ic cd-ic--brown"></div>
-              <div className="cd-c">
-                <div className="cd-t">Robert A. Brown</div>
-                <div className="cd-st t--upper t--subtitle">Boston University</div>
-                <div className="cd-d">President</div>
               </div>
             </a>
             <a href={letters} className="cd m-t500 g--4 g--4--sl" download>
