@@ -8,6 +8,7 @@ import Contact from '../components/contact-public'
 import Footer from '../components/footer'
 import ModalVideo from 'react-modal-video'
 import Intro from '../components/intro'
+import Support from '../components/support'
 import Chapters from '../components/chapters'
 
 import styles from "./index.css"
@@ -40,6 +41,7 @@ class PublicPage extends React.Component {
         <Intro />
         <Double videoAction={this.openModal} />
         <Grid videoAction={this.openModal} />
+        <Support />
         <Chapters />
         <Contact />
         <ModalVideo channel='youtube' isOpen={this.state.isOpen} videoId={this.state.videoId} onClose={() => this.setState({isOpen: false})} />

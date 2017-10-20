@@ -1,0 +1,9 @@
+.btn--o {
+  background-color: #ffffff !important;
+  color: #091f2f !important;
+}
+
+.btn--o:hover {
+  background-color: #ff9900 !important;
+  color: #ffffff !important;
+}

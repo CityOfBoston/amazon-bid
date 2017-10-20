@@ -2,7 +2,6 @@ import React from "react"
 
 import pdf from '../images/pdf.svg'
 import styles from "./grid.css"
-import letters from '../testimonials/BostonLettersOfSupport.pdf'
 
 class GridPublic extends React.Component {
   render() {
@@ -18,6 +17,14 @@ class GridPublic extends React.Component {
               <div className="cd-c">
                 <div className="cd-t">Martin J. Walsh</div>
                 <div className="cd-st t--upper t--subtitle">City of Boston</div>
+                <div className="cd-d">Mayor</div>
+              </div>
+            </a>
+            <a className="cd m-t500 g--4 g--4--sl" onClick={() => this.props.videoAction('pg7Gno710TU')}>
+              <div className="cd-ic cd-ic--arrigo"></div>
+              <div className="cd-c">
+                <div className="cd-t">Brian M. Arrigo</div>
+                <div className="cd-st t--upper t--subtitle">City of Revere</div>
                 <div className="cd-d">Mayor</div>
               </div>
             </a>
@@ -75,14 +82,6 @@ class GridPublic extends React.Component {
                 <div className="cd-t">Christine Lee</div>
                 <div className="cd-st t--upper t--subtitle">Northeastern University</div>
                 <div className="cd-d">Student</div>
-              </div>
-            </a>
-            <a href={letters} className="cd m-t500 g--4 g--4--sl" download>
-              <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
-              <div className="cd-c">
-                <div className="cd-t" style={{maxWidth: '80%'}}>Letters of Support</div>
-                <div className="cd-st t--upper t--subtitle"></div>
-                <div className="cd-d">Hear more from our amazing business, education, and community leaders.</div>
               </div>
             </a>
           </div>
