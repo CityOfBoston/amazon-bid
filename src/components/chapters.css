@@ -6,8 +6,12 @@
   width: 100%;
 }
 
-.ch--odd .g {
-  flex-direction: column-reverse;
+.ch--odd .g--6:first-child  {
+  order: 2;
+}
+
+.ch--odd .g--6:last-child  {
+  order: 1;
 }
 
 .ch-i {
@@ -15,6 +19,14 @@
 }
 
 @media screen and (min-width: 835px) {
+  .ch--odd .g--6:first-child  {
+    order: 1;
+  }
+
+  .ch--odd .g--6:last-child  {
+    order: 2;
+  }
+
   .ch .g--6:first-child .ch-c {
     padding-right: 1rem;
   }
@@ -25,5 +37,6 @@
 
   .ch--odd .g {
     flex-direction: row;
+    -webkit-flex-direction: row;
   }
 }
