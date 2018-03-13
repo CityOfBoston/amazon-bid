@@ -47,7 +47,7 @@ class IndexPage extends React.Component {
                 <div className="t--intro">We’re proud to present our response to Amazon's HQ2 Request for Proposal. Boston is an open and welcoming city — a city everyone can call home. Whether you’re an innovator, entrepreneur, dreamer, or doer, Boston has a place for you. Take a look at the featured videos below to learn more about what we have to offer.</div>
               </div>
               <div className="g--4 ta-r--large">
-                <a href="/real_estate.zip" className="btn">Download Complete RFI</a>
+                <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/real_estate.zip" className="btn">Download Complete RFI</a>
               </div>
             </div>
           </div>

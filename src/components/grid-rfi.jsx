@@ -2,11 +2,6 @@ import React from "react"
 
 import pdf from '../images/pdf.svg'
 import zip from '../images/zip.svg'
-import talent from '../docs/MA_Boston_Talent.pdf'
-import taxes from '../docs/MA_Boston_Taxes and Tax Policy.pdf'
-import bullfinch from '../docs/MA_Boston_BulfinchCrossing_RealEstate.pdf'
-import seaport from '../docs/MA_Boston_SeaportSquare_RealEstate.pdf'
-import growth from '../docs/MA_Boston_Growth.pdf'
 import styles from "./grid-rfi.css"
 
 class GridRFI extends React.Component {
@@ -23,7 +18,7 @@ class GridRFI extends React.Component {
                 <div className="t--intro">Take a deep dive into Boston’s diverse talent and how we are fostering a strong pipeline for the future.</div>
               </div>
               <div className="g--4 ta-r--large">
-                <a href={talent} className="btn" download>Download PDF</a>
+                <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_Talent.pdf" className="btn" download>Download PDF</a>
               </div>
             </div>
           </div>
@@ -38,7 +33,7 @@ class GridRFI extends React.Component {
                 <div className="t--intro">Learn about all of the factors that make Boston a convenient, affordable, and healthy community with a high quality of life.</div>
               </div>
               <div className="g--4 ta-r--large">
-                <a href={growth} className="btn" download>Download PDF</a>
+                <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_Growth.pdf" className="btn" download>Download PDF</a>
               </div>
             </div>
           </div>
@@ -53,39 +48,39 @@ class GridRFI extends React.Component {
                 <div className="t--intro">Explore several different locations primed for the future of Amazon’s second North American headquarters.</div>
               </div>
               <div className="g--4 ta-r--large">
-                <a href="/real_estate.zip" className="btn" download>Download All</a>
+                <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/real_estate.zip" className="btn" download>Download All</a>
               </div>
             </div>
             <div className="g">
-              <a href={bullfinch} className="cd m-t500 g--12" download>
+              <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_BulfinchCrossing_RealEstate.pdf" className="cd m-t500 g--12" download>
                 <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
                   <div className="cd-t" style={{maxWidth: '80%'}}>Bulfinch Crossing</div>
                   <div className="cd-st t--upper t--subtitle"></div>
                 </div>
               </a>
-              <a href={seaport} className="cd m-t500 g--12" download>
+              <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_SeaportSquare_RealEstate.pdf" className="cd m-t500 g--12" download>
                 <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
                   <div className="cd-t" style={{maxWidth: '80%'}}>Seaport Square</div>
                   <div className="cd-st t--upper t--subtitle"></div>
                 </div>
               </a>
-              <a href="/south_station.zip" className="cd m-t500 g--12" download>
+              <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/south_station.zip" className="cd m-t500 g--12" download>
                 <img src={zip} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
                   <div className="cd-t" style={{maxWidth: '80%'}}>South Station</div>
                   <div className="cd-st t--upper t--subtitle"></div>
                 </div>
               </a>
-              <a href="/suffolk_downs.zip" className="cd m-t500 g--12" download>
+              <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/suffolk_downs.zip" className="cd m-t500 g--12" download>
                 <img src={zip} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
                   <div className="cd-t" style={{maxWidth: '80%'}}>Suffolk Downs</div>
                   <div className="cd-st t--upper t--subtitle"></div>
                 </div>
               </a>
-              <a href="/winthrop_square.zip" className="cd m-t500 g--12" download>
+              <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/winthrop_square.zip" className="cd m-t500 g--12" download>
                 <img src={zip} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
                   <div className="cd-t" style={{maxWidth: '80%'}}>Winthrop Square</div>
@@ -105,7 +100,7 @@ class GridRFI extends React.Component {
                 <div className="t--intro">A detailed explanation of the tax structure in the Commonwealth of Massachusetts and cities of Boston and Revere, as well as proposed legislation, can be found here. </div>
               </div>
               <div className="g--4 ta-r--large">
-                <a href={taxes} className="btn" download>Download PDF</a>
+                <a href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_Taxes and Tax Policy.pdf" className="btn" download>Download PDF</a>
               </div>
             </div>
           </div>
