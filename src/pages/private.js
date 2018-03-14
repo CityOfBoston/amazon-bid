@@ -32,9 +32,29 @@ class IndexPage extends React.Component {
     }
   }
 
+  setMain = (el) => {
+    // Adds event listening to all of our downloads
+    el.addEventListener('click', (ev) => {
+      if (typeof ga === 'undefined') {
+        return;
+      }
+
+      for (let target = ev.target; target; target = target.parentNode) {
+        if (target.tagName === 'A') {
+          const href = target.href;
+          if (href.match(/(\.pdf|\.zip)$/)) {
+            const path = href.match(/https?:\/\/[^/]*(\/.*\/([^/.]+)\.\w*)/);
+            ga('send', 'pageview', path[1], { title: path[2] });
+          }
+        }
+      }
+    })
+  }
+
+
   render () {
     return (
-      <div className="mn">
+      <div className="mn" ref={this.setMain}>
         <Hero />
         <Intro />
         <Double videoAction={this.openModal} />

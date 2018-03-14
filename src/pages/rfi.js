@@ -35,9 +35,28 @@ class IndexPage extends React.Component {
     }
   }
 
+  setMain = (el) => {
+    // Adds event listening to all of our downloads
+    el.addEventListener('click', (ev) => {
+      if (typeof ga === 'undefined') {
+        return;
+      }
+
+      for (let target = ev.target; target; target = target.parentNode) {
+        if (target.tagName === 'A') {
+          const href = target.href;
+          if (href.match(/(\.pdf|\.zip)$/)) {
+            const path = href.match(/https?:\/\/[^/]*(\/.*\/([^/.]+)\.\w*)/);
+            ga('send', 'pageview', path[1], { title: path[2] });
+          }
+        }
+      }
+    })
+  }
+
   render () {
     return (
-      <div className="mn">
+      <div className="mn" ref={this.setMain}>
         <Hero />
         <div className="b b--fw">
           <div className="b-c">
@@ -56,7 +75,7 @@ class IndexPage extends React.Component {
         </div>
         <GridRFI />
         <div className="b b--fw">
-          <div className="hro hro--s">
+          <div className="hro hro--books">
             <div className="hro-c">
               <h1 className="hro-t hro-t--l">&nbsp;</h1>
               <div className="hro-st hro-st--l" style={{marginBottom: 25, color: 'rgb(255,255,255)'}}>&nbsp;</div>
@@ -71,7 +90,7 @@ class IndexPage extends React.Component {
             </div>
             <div className="g m-b500">
               <div className="g--8">
-                <div className="t--intro">Intro text for Somerville goes here.</div>
+                <div className="t--intro">Somerville’s response to the RFI questions.</div>
               </div>
               <div className="g--4 ta-r--large">
                 <a href="https://d279ml9s9jjbhy.cloudfront.net/somerville/somerville.zip" className="btn" download>Download All</a>
@@ -95,14 +114,7 @@ class IndexPage extends React.Component {
               <a href="https://d279ml9s9jjbhy.cloudfront.net/somerville/real_estate.zip" className="cd m-t500 g--12" download>
                 <img src={zip} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
-                  <div className="cd-t" style={{maxWidth: '80%'}}>South Station</div>
-                  <div className="cd-st t--upper t--subtitle"></div>
-                </div>
-              </a>
-              <a href="https://d279ml9s9jjbhy.cloudfront.net/somerville/MA_Boston_Somerville Orange Line_Taxes and Tax Policy.pdf " className="cd m-t500 g--12" download>
-                <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
-                <div className="cd-c">
-                  <div className="cd-t" style={{maxWidth: '80%'}}>Taxes and Tax Policy</div>
+                  <div className="cd-t" style={{maxWidth: '80%'}}>Real Estate</div>
                   <div className="cd-st t--upper t--subtitle"></div>
                 </div>
               </a>
@@ -110,6 +122,13 @@ class IndexPage extends React.Component {
                 <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
                 <div className="cd-c">
                   <div className="cd-t" style={{maxWidth: '80%'}}>Incentives</div>
+                  <div className="cd-st t--upper t--subtitle"></div>
+                </div>
+              </a>
+              <a href="https://d279ml9s9jjbhy.cloudfront.net/somerville/MA_Boston_Somerville Orange Line_Taxes and Tax Policy.pdf " className="cd m-t500 g--12" download>
+                <img src={pdf} alt="City of Boston ❤︎ Amazon" className="lo-i" className="cd-i" width="39" height="59" />
+                <div className="cd-c">
+                  <div className="cd-t" style={{maxWidth: '80%'}}>Taxes and Tax Policy</div>
                   <div className="cd-st t--upper t--subtitle"></div>
                 </div>
               </a>

@@ -40,7 +40,12 @@ Resources:
           Image: !Sub '${RepositoryName}:${Tag}'
           Essential: true
           Memory: 500
-          MemoryReservation: 200
+          MemoryReservation: 275
+          DnsServers:
+            - 10.241.103.100
+            - 10.241.103.101
+            - 10.241.106.165
+            - 10.241.106.166
           PortMappings:
             - ContainerPort:
                 Fn::ImportValue:
@@ -79,6 +84,9 @@ Resources:
   Service:
     Type: 'AWS::ECS::Service'
     Properties:
+      # We need to specify a service name, even though it prevents easy
+      # replacement via CloudFormation, so that we can define CloudWatch alarms
+      # and metrics that don't directly reference this stack.
       ServiceName: !Ref AppStack
       Cluster: 
         Fn::ImportValue:
@@ -97,6 +105,11 @@ Resources:
           TargetGroupArn:
             Fn::ImportValue:
               !Sub '${AppStack}:TargetGroupArn'
+      PlacementStrategies:
+        - Type: spread
+          Field: attribute:ecs.availability-zone
+        - Type: binpack
+          Field: memory
 
 Outputs:
   ServiceUrl:
