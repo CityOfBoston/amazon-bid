@@ -56,7 +56,7 @@ class IndexPage extends React.Component {
   render() {
     return (
       <div className="mn" ref={this.setMain}>
-        <Hero />
+        <Hero smaller />
         <div className="b b--fw">
           <div className="b-c">
             <div className="sh m-b500">

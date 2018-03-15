@@ -48,7 +48,7 @@ class GridRFI extends React.Component {
                     download
                   >
                     leading in availability of affordable housing
-                  </a>,
+                  </a>,{" "}
                   <a
                     href="https://d279ml9s9jjbhy.cloudfront.net/rfi/Is This Complex Affordable Housing Deal a Promising Model or a Unicorn_ – Next City.pdf"
                     download
@@ -60,20 +60,20 @@ class GridRFI extends React.Component {
                     download
                   >
                     fostering development without displacement
-                  </a>, while the Walsh administration’s policies continue to
+                  </a>, while the Walsh administration’s policies continue to{" "}
                   <a
                     href="https://d279ml9s9jjbhy.cloudfront.net/rfi/City seeking info on developing public assets with housing _ Bay State Banner.pdf"
                     download
                   >
                     innovate new housing options
-                  </a>
+                  </a>{" "}
                   and{" "}
                   <a
                     href="https://d279ml9s9jjbhy.cloudfront.net/rfi/More Boston neighborhoods seeing affordable housing units - The Boston Globe.pdf"
                     download
                   >
                     ensure affordable development
-                  </a>
+                  </a>{" "}
                   throughout the City of Boston.
                 </div>
               </div>

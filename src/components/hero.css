@@ -38,6 +38,10 @@
     padding: 100px 0;
   }
 
+  .hro--sm {
+    padding: 0;
+  }
+
   .hro-bc {
     display: flex;
     justify-content: center;
