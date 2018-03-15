@@ -74,7 +74,7 @@ class IndexPage extends React.Component {
               </div>
               <div className="g--4 ta-r--large">
                 <a
-                  href="https://d279ml9s9jjbhy.cloudfront.net/rfi/real_estate.zip"
+                  href="https://d279ml9s9jjbhy.cloudfront.net/rfi/boston_rfi.zip"
                   className="btn"
                 >
                   Download Complete RFI

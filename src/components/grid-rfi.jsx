@@ -42,7 +42,39 @@ class GridRFI extends React.Component {
                 <div className="t--intro">
                   Learn about all of the factors that make Boston a convenient,
                   affordable, and healthy community with a high quality of life.
-                  View a 2017 Boston Globe article regarding housing production.
+                  Review how Boston is{" "}
+                  <a
+                    href="https://d279ml9s9jjbhy.cloudfront.net/rfi/No major city has enough affordable housing to meet demand, but how does Seattle stack up_ _ The Seattle Times.pdf"
+                    download
+                  >
+                    leading in availability of affordable housing
+                  </a>,
+                  <a
+                    href="https://d279ml9s9jjbhy.cloudfront.net/rfi/Is This Complex Affordable Housing Deal a Promising Model or a Unicorn_ – Next City.pdf"
+                    download
+                  >
+                    supporting creative models to increase housing production
+                  </a>, and is{" "}
+                  <a
+                    href="https://d279ml9s9jjbhy.cloudfront.net/rfi/Developers propose an affordable 30-floor tower in Chinatown with apartments, condos, hotel rooms - The Boston Globe.pdf"
+                    download
+                  >
+                    fostering development without displacement
+                  </a>, while the Walsh administration’s policies continue to
+                  <a
+                    href="https://d279ml9s9jjbhy.cloudfront.net/rfi/City seeking info on developing public assets with housing _ Bay State Banner.pdf"
+                    download
+                  >
+                    innovate new housing options
+                  </a>
+                  and{" "}
+                  <a
+                    href="https://d279ml9s9jjbhy.cloudfront.net/rfi/More Boston neighborhoods seeing affordable housing units - The Boston Globe.pdf"
+                    download
+                  >
+                    ensure affordable development
+                  </a>
+                  throughout the City of Boston.
                 </div>
               </div>
               <div className="g--4 ta-r--large">
@@ -65,8 +97,8 @@ class GridRFI extends React.Component {
             <div className="g">
               <div className="g--8 m-b300--mo">
                 <div className="t--intro">
-                  Explore several different locations primed for the future of
-                  Amazon’s second North American headquarters.
+                  Discover a dynamic, shovel-ready site ready to serve as the
+                  foundation for Amazon’s future.
                 </div>
               </div>
               <div className="g--4 ta-r--large">
@@ -97,7 +129,7 @@ class GridRFI extends React.Component {
               </div>
               <div className="g--4 ta-r--large">
                 <a
-                  href="https://d279ml9s9jjbhy.cloudfront.net/rfi/real_estate.zip"
+                  href="https://d279ml9s9jjbhy.cloudfront.net/rfi/south_boston_waterfront_downtown.zip"
                   className="btn"
                   download
                 >
@@ -126,9 +158,13 @@ class GridRFI extends React.Component {
                   <div className="cd-st t--upper t--subtitle" />
                 </div>
               </a>
-              <a href="xxxxxxx" className="cd m-t500 g--12" download>
+              <a
+                href="https://d279ml9s9jjbhy.cloudfront.net/rfi/massport.zip"
+                className="cd m-t500 g--12"
+                download
+              >
                 <img
-                  src={pdf}
+                  src={zip}
                   alt="City of Boston ❤︎ Amazon"
                   className="lo-i"
                   className="cd-i"
