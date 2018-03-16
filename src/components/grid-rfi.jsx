@@ -16,11 +16,8 @@ class GridRFI extends React.Component {
             <div className="g">
               <div className="g--8 m-b300--mo">
                 <div className="t--intro">
-                  The City of Boston is proud to further introduce you to our
-                  diverse, inclusive, and connected community. Boston is
-                  positioned for transformative growth, and will serve as a
-                  perfect foundation for Amazon’s second North American
-                  headquarters.
+                  Take a deep dive into Boston’s diverse talent and how we are
+                  fostering a strong pipeline for the future.
                 </div>
               </div>
               <div className="g--4 ta-r--large">
@@ -196,7 +193,7 @@ class GridRFI extends React.Component {
                 />
                 <div className="cd-c">
                   <div className="cd-t" style={{ maxWidth: "80%" }}>
-                    Massport Parcels
+                  Massport Parcels
                   </div>
                   <div className="cd-st t--upper t--subtitle" />
                 </div>

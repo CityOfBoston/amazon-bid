@@ -65,11 +65,11 @@ class IndexPage extends React.Component {
             <div className="g">
               <div className="g--8">
                 <div className="t--intro">
-                  We’re proud to present our response to Amazon’s HQ2 Request
-                  for Proposal. Boston is an open and welcoming city — a city
-                  everyone can call home. Whether you’re an innovator,
-                  entrepreneur, dreamer, or doer, Boston has a place for you.
-                  Take a look below to learn more about what we have to offer.
+                  The City of Boston is proud to further introduce you to our
+                  diverse, inclusive, and connected community. Boston is
+                  positioned for transformative growth, and will serve as a
+                  perfect foundation for Amazon’s second North American
+                  headquarters.
                 </div>
               </div>
               <div className="g--4 ta-r--large">
