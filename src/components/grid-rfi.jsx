@@ -16,8 +16,11 @@ class GridRFI extends React.Component {
             <div className="g">
               <div className="g--8 m-b300--mo">
                 <div className="t--intro">
-                  Take a deep dive into Boston’s diverse talent and how we are
-                  fostering a strong pipeline for the future.
+                  The City of Boston is proud to further introduce you to our
+                  diverse, inclusive, and connected community. Boston is
+                  positioned for transformative growth, and will serve as a
+                  perfect foundation for Amazon’s second North American
+                  headquarters.
                 </div>
               </div>
               <div className="g--4 ta-r--large">
@@ -97,7 +100,7 @@ class GridRFI extends React.Component {
             <div className="g">
               <div className="g--8 m-b300--mo">
                 <div className="t--intro">
-                  Discover a dynamic, shovel-ready site ready to serve as the
+                  Dig in to a dynamic, shovel-ready site ready to serve as the
                   foundation for Amazon’s future.
                 </div>
               </div>
@@ -139,6 +142,26 @@ class GridRFI extends React.Component {
             </div>
             <div className="g">
               <a
+                href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_MapofSouthBostonWaterfrontandDowntownCluster_RealEstate.pdf"
+                className="cd m-t500 g--12"
+                download
+              >
+                <img
+                  src={pdf}
+                  alt="City of Boston ❤︎ Amazon"
+                  className="lo-i"
+                  className="cd-i"
+                  width="39"
+                  height="59"
+                />
+                <div className="cd-c">
+                  <div className="cd-t" style={{ maxWidth: "80%" }}>
+                    Map of South Boston Waterfront/Downtown Cluster
+                  </div>
+                  <div className="cd-st t--upper t--subtitle" />
+                </div>
+              </a>
+              <a
                 href="https://d279ml9s9jjbhy.cloudfront.net/rfi/MA_Boston_BulfinchCrossing_RealEstate.pdf"
                 className="cd m-t500 g--12"
                 download
@@ -173,7 +196,7 @@ class GridRFI extends React.Component {
                 />
                 <div className="cd-c">
                   <div className="cd-t" style={{ maxWidth: "80%" }}>
-                    Massport
+                    Massport Parcels
                   </div>
                   <div className="cd-st t--upper t--subtitle" />
                 </div>

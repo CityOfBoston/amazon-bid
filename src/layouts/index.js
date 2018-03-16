@@ -10,7 +10,7 @@ import logo from '../images/logo.svg'
 const Header = () => (
   <header className="h" role="header">
     <div className="lo" style={{paddingLeft: 20}}>
-      <a href="#" className="lo-l">
+      <a href="/" className="lo-l">
         <img src={logo} alt="City of Boston ❤︎ Amazon" className="lo-i" style={{width: 270}} />
       </a>
     </div>
